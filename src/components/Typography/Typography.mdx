@@ -1,0 +1,85 @@
+import { Canvas, Meta, Story } from '@storybook/addon-docs';
+import Typography  from './';
+
+<Meta title="Docs/Typography" component={Typography} />
+
+# Typography Component
+
+`Typography` is a component that can be used for text in the application. Al props are required.
+
+## Usage 
+
+```jsx
+<Typography color="black" fontSize="normal" letterSpacing="normal" variant="p">
+  Im Text
+</Typography>
+```
+
+<table style={{width: "100%"}}>
+  <tr>
+    <th>Prop</th>
+    <th>Type</th>
+    <th>Options</th>
+  </tr>
+  <tr>
+    <td><code>color (required)</code></td>
+    <td><code>String</code></td>
+    <td>
+      <ul>
+        <li>black</li>
+        <li>medium-grey</li>
+        <li>dark-grey</li>
+        <li>light-grey</li>
+        <li>white</li>
+        <li>extra-light-grey</li>
+        <li>green</li>
+        <li>light-mint</li>
+        <li>blue</li>
+        <li>navy</li>
+        <li>lily</li>
+        <li>orange</li>
+        <li>yellow</li>
+        <li>deep-pink</li>
+        <li>red</li>
+        <li>light-red</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td><code>fontSize (required)</code></td>
+    <td><code>String</code></td>
+    <td>
+      <ul>
+        <li>xs</li>
+        <li>sm</li>
+        <li>normal</li>
+        <li>lg</li>
+        <li>xl</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td><code>letterSpacing (required)</code></td>
+    <td><code>String</code></td>
+    <td>
+      <ul>
+        <li>normal</li>
+        <li>wide</li>
+        <li>xwide</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td><code>variant (required)</code></td>
+    <td><code>String</code></td>
+    <td>
+      <ul>
+        <li>p</li>
+        <li>h1</li>
+        <li>h2</li>
+        <li>h3</li>
+        <li>h4</li>
+      </ul>
+    </td>
+  </tr>
+</table>

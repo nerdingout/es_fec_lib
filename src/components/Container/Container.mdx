@@ -1,0 +1,40 @@
+import { Canvas, Meta, Story } from '@storybook/addon-docs';
+import Container from "./";
+
+<Meta title="Docs/Container" component={Container} />
+
+# Container component
+
+`Container` is a flex box component that uses flex wrap. Meant to be used with an `Item` to create responsive layouts.
+
+## Usage
+
+```jsx
+<Container>
+  <Item xs={12} sm={6} md={3} lg={2} xl={2}>
+    Item 1
+  </Item>
+  <Item xs={12} sm={6} md={3} lg={2} xl={2}>
+    Item 2
+  </Item>
+  <Item xs={12} sm={6} md={3} lg={2} xl={2}>
+    Item 3
+  </Item>
+  <Item xs={12} sm={6} md={3} lg={2} xl={2}>
+    Item 4
+  </Item>
+</Container>
+```
+
+<table style={{width: "100%"}}>
+  <tr>
+    <th>Props</th>
+    <th>Type</th>
+    <th>Options</th>
+  </tr>
+  <tr>
+    <td><code>children</code></td>
+    <td><code>React.Node</code></td>
+    <td><code>NA</code></td>
+  </tr>
+</table>

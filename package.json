@@ -1,0 +1,57 @@
+{
+  "name": "es_component_lib",
+  "version": "1.0.0",
+  "description": "A React component library",
+  "main": "dist/es_component_lib.umd.js",
+  "module": "dist/es_component_lib.es.js",
+  "types": "dist/types/index.d.ts",
+  "type": "module",
+  "scripts": {
+    "build": "vite build",
+    "prepublishOnly": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^17.0.0 || ^18.0.0",
+    "react-dom": "^17.0.0 || ^18.0.0",
+    "styled-components": "^6.1.12",
+    "typeface-montserrat": "^1.1.13"
+  },
+  "devDependencies": {
+    "@chromatic-com/storybook": "^1.6.1",
+    "@storybook/addon-docs": "^8.5.4",
+    "@storybook/addon-essentials": "^8.5.4",
+    "@storybook/addon-interactions": "^8.5.4",
+    "@storybook/addon-links": "^8.5.4",
+    "@storybook/addon-onboarding": "^8.5.4",
+    "@storybook/blocks": "^8.5.4",
+    "@storybook/react": "^8.5.4",
+    "@storybook/react-vite": "^8.5.4",
+    "@storybook/test": "^8.5.4",
+    "@types/node": "^22.1.0",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "storybook": "^8.5.4",
+    "typescript": "^5.5.4",
+    "vite": "^5.4.0"
+  },
+  "peerDependencies": {
+    "react": "^17.0.0 || ^18.0.0",
+    "react-dom": "^17.0.0 || ^18.0.0"
+  },
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/es_component_lib.es.js",
+      "require": "./dist/es_component_lib.umd.js"
+    }
+  }
+}
